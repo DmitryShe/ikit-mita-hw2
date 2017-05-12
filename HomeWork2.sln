@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWork2", "HomeWork2\HomeWork2.csproj", "{ECEE7839-F79A-47A8-83F7-1B1B4946FADC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW.Models", "HW.Models\HW.Models.csproj", "{46D798AA-9672-4193-A2C2-C3770878567D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECEE7839-F79A-47A8-83F7-1B1B4946FADC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECEE7839-F79A-47A8-83F7-1B1B4946FADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECEE7839-F79A-47A8-83F7-1B1B4946FADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECEE7839-F79A-47A8-83F7-1B1B4946FADC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46D798AA-9672-4193-A2C2-C3770878567D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46D798AA-9672-4193-A2C2-C3770878567D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46D798AA-9672-4193-A2C2-C3770878567D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46D798AA-9672-4193-A2C2-C3770878567D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
