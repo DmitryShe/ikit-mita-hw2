@@ -12,7 +12,7 @@ namespace HomeWork2
     {
         static void Main(string[] args)
         {           
-            var Lada = new Car("Лада", "D");
+            var Lada = new Car("Лада", Categories.D);
             Lada.Color = Color.Violet;
             Console.WriteLine("Покупаем машину: {0}", Lada.Model);
 
@@ -26,8 +26,12 @@ namespace HomeWork2
             }
 
 
-            
-            var driver = new Driver("Вольдемар", new DateTime(1996, 6, 6), new List<string> { "B", "C" } );
+
+            var driver = new Driver("Вольдемар", new DateTime(1996, 6, 6), new List<Categories>() );
+            driver.Category.Add(Categories.B);
+            driver.Category.Add(Categories.C);
+
+
             Console.WriteLine("\nПринимаем на работу инструктора Вольдемара");
 
             try
@@ -40,7 +44,7 @@ namespace HomeWork2
             }
 
             
-            driver.Category.Add("D");
+            driver.Category.Add(Categories.D);
             Console.WriteLine("\nИнструктор Вольдемар приобретает категорию D");
 
             try

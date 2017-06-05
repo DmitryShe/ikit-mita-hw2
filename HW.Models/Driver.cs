@@ -7,25 +7,29 @@ using System.Threading.Tasks;
 namespace HW.Models
 {   
     public class Driver
-    {
-        public Driver(string name, DateTime licenceDate, List<string> category)
+    {        
+        readonly DateTime LicenceDate;
+        public string Name { get; }
+
+        public List<Categories> Category { get; set; }
+        public Car Car { get; private set; }
+
+        public Driver(string name, DateTime licenceDate, List<Categories> category)
         {
             Name = name;
             LicenceDate = licenceDate;
             Category = category;
         }
 
-        public readonly DateTime LicenceDate;
-        public readonly string Name;
-
-        public List<string> Category { get; set; }
-        public Car Car { get; private set; }
-
-
-
         public int Experience
         {
-            get { return DateTime.Now.Year - LicenceDate.Year; }
+            get
+            {               
+                int exp = DateTime.Today.Year - LicenceDate.Year;
+                if (LicenceDate > DateTime.Today.AddYears(-exp))
+                    exp--;
+                return exp;
+            }
         }
 
         public void OwnCar(Car car)

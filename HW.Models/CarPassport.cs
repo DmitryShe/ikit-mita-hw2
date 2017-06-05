@@ -13,7 +13,7 @@ namespace HW.Models
             Car = car;
         }
 
-        public readonly Car Car;
+        readonly Car Car;
         public Driver Owner { get; set; }
 
     }
