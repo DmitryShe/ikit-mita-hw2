@@ -32,8 +32,10 @@ namespace HW.Models
 
         public void ChangeOwner(string carNumber, Driver driver)
         {
-            CarNumber = carNumber;
             driver.OwnCar(this);
+
+            CarNumber = carNumber;
+            
             CarPassport.Owner = driver;
         }
     }
